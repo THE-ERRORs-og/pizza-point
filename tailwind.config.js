@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+// Removed @import statements. Add them to a CSS file or HTML <link> tag.
 
-export default {
+
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,7 +26,9 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        "MrDafoe-Regular": ["MrDafoe-Regular", "serif"],
+        mrDafoeRegular: ["MrDafoe-Regular", "serif"],
+        bebasNeue: ["Bebas Neue", "sans-serif"],
+        amaranth: ["Amaranth", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -34,3 +38,5 @@ export default {
     },
   },
 };
+
+export default config;

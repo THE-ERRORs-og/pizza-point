@@ -1,7 +1,7 @@
 import React from "react";
 
 import TopPicks from "./TopPicks";
-import RoundPizzaCard from "../common/RoundPizzaCard";
+import {RoundPizzaCard} from "../common/RoundPizzaCard";
 
 const TopPicksSection = () => {
   return (

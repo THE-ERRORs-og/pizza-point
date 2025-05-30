@@ -1,7 +1,5 @@
-
-
+import { Bebas_Neue } from "next/font/google";
 import React from "react";
-
 
 const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   return (
@@ -55,5 +53,30 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
     </div>
   );
 };
+const bebas = Bebas_Neue({
+  weight: "400",
+});
+const MenuRoundedCard = ({ name, img, data }) => {
+  return (
+    <div className="bg-white shadow-xl rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[300px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden">
+      {/* Pizza Image */}
+      <img
+        src={img}
+        alt={name}
+        className="w-[50%] aspect-square rounded-full object-cover shadow-md mb-4"
+      />
 
-export default RoundPizzaCard;
+      {/* Title */}
+      <h3
+        className={`text-4xl font-bold text-[#D32F2F] uppercase mb-2 ${bebas.className} font-bold `}
+      >
+        {name}
+      </h3>
+
+      {/* Ingredients / Description */}
+      <p className="text-gray-700 text-sm leading-relaxed">{data}</p>
+    </div>
+  );
+};
+
+export { RoundPizzaCard, MenuRoundedCard };

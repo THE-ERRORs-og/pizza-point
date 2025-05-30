@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -15,71 +16,69 @@ body {
   font-family: "Amaranth", sans-serif;
 }
 
-
-@theme{
-  --font-dafoe: "Mr Dafoe", sans-serif; 
+@theme {
+  --font-dafoe: "Mr Dafoe", sans-serif;
   --font-amaranth: "Amaranth", sans-serif;
 
   --color-primary1: oklch(62.45% 0.222 29.5);
   --color-primary2: oklch(69.7% 0.228 29.7);
-  --color-primary3: oklch(74.5% 0.230 30.0);
+  --color-primary3: oklch(74.5% 0.23 30);
   --color-primary4: oklch(82.4% 0.155 29.8);
 
   --color-secondary1: oklch(80.5% 0.204 83.5);
-  --color-secondary2: oklch(82.0% 0.198 83.5);
+  --color-secondary2: oklch(82% 0.198 83.5);
   --color-secondary3: oklch(84.9% 0.181 83.8);
-  --color-secondary4: oklch(89.8% 0.115 84.0);
+  --color-secondary4: oklch(89.8% 0.115 84);
 
   --color-neutral: oklch(97.9% 0.005 100);
 }
 
-@layer base{
-
+@layer base {
   img {
     @apply block max-w-full;
   }
-
 }
 
-@layer utilities{
+@layer utilities {
   /* Start of Typography */
-  .main-heading{
-    @apply text-center text-[2rem] leading-[1.89994rem] md:text-[3rem] md:leading-[2.91563rem] lg:text-[4.75rem] lg:leading-[5rem] font-normal text-primary1
+  .main-heading {
+    @apply text-center text-[2rem] leading-[1.89994rem] md:text-[3rem] md:leading-[2.91563rem] lg:text-[4.75rem] lg:leading-[5rem] font-normal text-primary1;
   }
-  .sub-heading{
-    @apply text-[1.5rem] md:text-[2.75rem] lg:text-[4.375rem] leading-normal font-normal text-secondary1
+  .sub-heading {
+    @apply text-[1.5rem] md:text-[2.75rem] lg:text-[4.375rem] leading-normal font-normal text-secondary1;
   }
-  .pizza-name{
-    @apply  text-[0.63863rem]  md:text-[0.9415rem]  lg:text-[1.875rem] leading-normal font-normal text-primary1
+  .sub-heading2 {
+    @apply text-[1.25rem] md:text-[2.5rem] lg:text-[3rem] leading-normal font-normal text-secondary2;
   }
-  .pizza-price{
-    @apply  text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral
+  .pizza-name {
+    @apply text-[0.63863rem]  md:text-[0.9415rem]  lg:text-[1.875rem] leading-normal font-normal text-primary1;
   }
-
-  .px{
-    @apply md:pl-16 md:pr-16 pl-6 pr-6
-  }
-
-  .my{
-    @apply mt-14 mb-14
+  .pizza-price {
+    @apply text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral;
   }
 
-  .logo-img{
-    @apply md:w-[200px] w-[150px]
-  }
-  .sub-heading-art{
-    @apply  lg:w-[3.86238rem] lg:h-[3.4375rem] md:w-[3.01781rem] md:h-[2.68756rem] w-[1.441rem] h-[1.2825rem]
-  }
-/* Start with buttons */
-  .btn-primary{
-    @apply bg-secondary3 pt-[0.625rem] pb-[0.625rem] pl-[1.5rem] pr-[1.5rem] text-[0.75rem] leading-[0.70681rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.5rem]  text-[#000] font-amaranth font-normal rounded-[0.75rem] transition duration-300 ease-in-out hover:bg-[#ea9a3f]
-  }
-  
-  .nav-hover{
-    @apply text-lg bg-transparent hover:bg-yellow-400 transition duration-300 ease-in-out rounded-xl px-4 py-[0.3rem]
+  .px {
+    @apply md:pl-16 md:pr-16 pl-6 pr-6;
   }
 
-  
+  .my {
+    @apply mt-14 mb-14;
+  }
+
+  .logo-img {
+    @apply md:w-[200px] w-[150px];
+  }
+  .sub-heading-art {
+    @apply lg:w-[3.86238rem] lg:h-[3.4375rem] md:w-[3.01781rem] md:h-[2.68756rem] w-[1.441rem] h-[1.2825rem];
+  }
+  /* Start with buttons */
+  .btn-primary {
+    @apply bg-secondary3 pt-[0.625rem] pb-[0.625rem] pl-[1.5rem] pr-[1.5rem] text-[0.75rem] leading-[0.70681rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.5rem]  text-[#000] font-amaranth font-normal rounded-[0.75rem] transition duration-300 ease-in-out hover:bg-[#ea9a3f];
+  }
+
+  .nav-hover {
+    @apply text-lg bg-transparent hover:bg-yellow-400 transition duration-300 ease-in-out rounded-xl px-4 py-[0.3rem];
+  }
 }
 
 /* 

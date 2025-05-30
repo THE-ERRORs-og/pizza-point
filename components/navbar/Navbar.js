@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <header className="flex  absolute z-10 w-screen justify-between items-center px text-black font-normal text-xl">
+      <header className="flex z-10 w-screen justify-between items-center px text-black font-normal text-xl">
         <div className="hidden lg:flex justify-start space-x-6 w-full">
           <Link href="/" key="Home" className={`nav-hover`}>
             Home
