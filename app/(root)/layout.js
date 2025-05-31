@@ -4,7 +4,7 @@ import React from "react";
 
 const Layout = ({ children }) => {
   return (
-    <div className="">
+    <div className="flex flex-col relative min-h-screen">
       <Navbar />
       {children}
       <Footer />

@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className=" w-full pt-4 pb-8">
       {/* content */}
-      <div className="inset-0 flex flex-col justify-center items-center gap-4 px">
+      <div className="inset-0 flex flex-col justify-center items-center gap-4">
         <h3 className="font-amaranth text-[0.75rem] md:text-[1.03031rem] lg:text-[1.75rem] font-normal text-[#737373]">
           Rated 5 Stars in Google
         </h3>
@@ -40,7 +40,7 @@ const Hero = () => {
         <img
           src="/banner/hero-banner.jpg"
           alt="hero-banner"
-          className="object-cover w-full lg:h-[44.93838rem] md:h-[25.20444rem]  h-[11.96456rem] rounded-[0.37194rem] md:rounded-[0.81463rem] lg:rounded-[1.39706rem]"
+          className="object-cover  w-full lg:h-[44.93838rem] md:h-[25.20444rem]  h-[11.96456rem] rounded-[0.37194rem] md:rounded-[0.81463rem] lg:rounded-[1.39706rem]"
         />
       </div>
     </div>

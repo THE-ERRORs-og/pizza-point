@@ -1,12 +1,15 @@
+import { Bebas_Neue } from "next/font/google";
 import React from "react";
 
 const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   return (
+
+    
     <div className=" ">
-      <div className="relative mt-8 flex flex-col items-center">
+      <div className="relative  pt-16 pl-4 flex flex-col items-center">
         {/* Pizza Image */}
         <div
-          className="shadow-[0_0_25.539px_0_rgba(0,0,0,0.10)] flex flex-col  items-center rounded-xl overflow-hidden"
+          className="shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] flex flex-col  items-center overflow-hidden"
           style={{
             borderRadius: "13.26831rem 13.26831rem 0.95769rem 0.95769rem",
           }}
@@ -14,7 +17,7 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
           <img
             src={img}
             alt={name}
-            className=" translate-y-8 md:translate-y-12 translate-x-1  md:translate-x-1.5 z-1 md:w-[85%] aspect-square rounded-full object-cover shadow-lg"
+            className=" translate-y-8 md:translate-y-12 translate-x-1  md:translate-x-1.5 z-1 w-[85%] aspect-square rounded-full object-cover shadow-lg"
           />
         </div>
 
@@ -51,4 +54,31 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   );
 };
 
-export default RoundPizzaCard;
+
+const bebas = Bebas_Neue({
+  weight: "400",
+});
+const MenuRoundedCard = ({ name, img, data }) => {
+  return (
+    <div className="bg-white shadow-xl rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[300px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden">
+      {/* Pizza Image */}
+      <img
+        src={img}
+        alt={name}
+        className="w-[50%] aspect-square rounded-full object-cover shadow-md mb-4"
+      />
+
+      {/* Title */}
+      <h3
+        className={`text-4xl font-bold text-[#D32F2F] uppercase mb-2 ${bebas.className} font-bold `}
+      >
+        {name}
+      </h3>
+
+      {/* Ingredients / Description */}
+      <p className="text-gray-700 text-sm leading-relaxed">{data}</p>
+    </div>
+  );
+};
+
+export { RoundPizzaCard, MenuRoundedCard };
