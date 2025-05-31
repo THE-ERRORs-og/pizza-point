@@ -1,25 +1,3 @@
-// import OfferCard from "@/components/common/OfferCard";
-// import React from "react";
-
-// export default function Page() {
-//   return (
-//     <div className="px">
-//       <div className=" my h-[13.5rem] md:h-[22.125rem] lg:h-[40.0625rem] space-x-4 flex items-center justify-between pt-4 pb-4">
-//         {/* //form */}
-
-//         {/* //pizza image */}
-//         <div className="hidden md:flex h-full w-full rounded-[0.37194rem] md:rounded-[0.81463rem] lg:rounded-[1.39706rem]">
-//           <img
-//             src="/contact-us/pizza-plate.png"
-//             alt="offer-img"
-//             className="object-cover h-full w-full rounded-[0.37194rem] md:rounded-[0.81463rem] lg:rounded-[1.39706rem] "
-//           />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import React from "react";
 
 export default function Page() {

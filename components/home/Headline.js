@@ -47,10 +47,11 @@ const Headline = ({
           // Text on the left, PizzaArt on the right
           <>
             <h2 className="sub-heading w-fit whitespace-nowrap text-lg md:text-xl lg:text-2xl font-semibold">
-              {leftText} <span className="font-dafoe text-primary1">{specialText}</span>{" "}
+              {leftText}{" "}
+              <span className="font-dafoe text-primary1">{specialText}</span>{" "}
               {rightText}
             </h2>
-            <div className="flex items-center gap-3 ml-4 overflow-hidden">
+            {/* <div className="flex items-center gap-3 ml-4 overflow-hidden">
               <AnimatePresence initial={false}>
                 {[...Array(pizzaCount)].map((_, idx) => (
                   <motion.div
@@ -64,12 +65,20 @@ const Headline = ({
                   </motion.div>
                 ))}
               </AnimatePresence>
-            </div>
+            </div> */}
+            <div
+              className="flex-1 ml-4  h-8 md:h-16  bg-repeat-x bg-center"
+              style={{
+                backgroundImage: "url('/art-img/combined.png')", // replace with your actual pizza icon path
+                backgroundSize: "auto 100%",
+                opacity: 1,
+              }}
+            />
           </>
         ) : (
           // Text on the right, PizzaArt on the left
           <>
-            <div className="flex items-center gap-3 mr-4 overflow-hidden">
+            {/* <div className="flex items-center gap-3 mr-4 overflow-hidden">
               <AnimatePresence initial={false}>
                 {[...Array(pizzaCount)].map((_, idx) => (
                   <motion.div
@@ -83,7 +92,15 @@ const Headline = ({
                   </motion.div>
                 ))}
               </AnimatePresence>
-            </div>
+            </div> */}
+           <div
+              className="flex-1 mr-4  h-8 md:h-16  bg-repeat-x bg-center"
+              style={{
+                backgroundImage: "url('/art-img/combined.png')", // replace with your actual pizza icon path
+                backgroundSize: "auto 100%",
+                opacity: 1,
+              }}
+            />
             <h2 className="sub-heading w-fit whitespace-nowrap text-lg md:text-xl lg:text-2xl font-semibold">
               {leftText}{" "}
               <span className="font-dafoe text-primary1">{specialText}</span>{" "}
@@ -113,4 +130,4 @@ const PizzaArt = ({ right = "" }) => {
   );
 };
 
-export default  Headline;
+export default Headline;

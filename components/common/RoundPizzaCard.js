@@ -3,8 +3,6 @@ import React from "react";
 
 const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   return (
-
-    
     <div className=" ">
       <div className="relative  pt-16 pl-4 flex flex-col items-center">
         {/* Pizza Image */}
@@ -54,13 +52,12 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   );
 };
 
-
 const bebas = Bebas_Neue({
   weight: "400",
 });
 const MenuRoundedCard = ({ name, img, data }) => {
   return (
-    <div className="bg-white shadow-xl rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[300px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden">
+    <div className="bg-white shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[300px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden">
       {/* Pizza Image */}
       <img
         src={img}

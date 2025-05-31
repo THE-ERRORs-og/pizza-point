@@ -1,10 +1,11 @@
+"use client";
+
 import {
   RoundPizzaCard,
   MenuRoundedCard,
 } from "@/components/common/RoundPizzaCard";
 
-import Headline from "@/components/home/Headline";
-import React from "react";
+import React, { useState } from "react";
 import {
   Select,
   SelectContent,
@@ -12,6 +13,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { ChevronDown, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
+
+import { cn } from "@/lib/utils"; // optional: classnames helper
 
 export default function page() {
   const pizzaData = [
@@ -133,21 +137,110 @@ export default function page() {
       startingPrice: 7,
     },
   ];
+  const [open, setOpen] = useState(false);
   return (
     <div className="flex flex-col px">
-      <Headline leftText="Our" specialText="Menu" rightText="" right={true} />
+      <div className="flex items-center w-full">
+        <div
+          className="flex-1  h-8 md:h-16  mr-4  bg-repeat-x bg-center"
+          style={{
+            backgroundImage: "url('/art-img/combined.png')", // replace with your actual pizza icon path
+            backgroundSize: "auto 100%",
+            opacity: 1,
+          }}
+        />
+        {/* Text Section */}
+
+        <h2 className="sub-heading w-fit whitespace-nowrap text-lg md:text-xl lg:text-2xl font-semibold">
+          Our
+          <span className="font-dafoe text-primary1"> Menu</span>{" "}
+        </h2>
+
+        {/* Repeating Pizza Icons */}
+        <div
+          className="flex-1 h-8 md:h-16 ml-4 bg-repeat-x bg-center"
+          style={{
+            backgroundImage: "url('/art-img/combined.png')", // replace with your actual pizza icon path
+            backgroundSize: "auto 100%",
+            opacity: 1,
+          }}
+        />
+      </div>
 
       <h3 className="sub-heading2 font-amaranth">Our Recommendation</h3>
-      <Select>
+      <div className="flex flex-wrap justify-center sm:justify-between gap-y-8">
+        {pizzaData.slice(0, 4).map((pizza) => (
+          <div key={pizza.id} className="mb-6 w-[50%] lg:w-[25%]">
+            <MenuRoundedCard
+              name={pizza.name}
+              data={`Starting from $${pizza.startingPrice}`}
+              img={pizza.image}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* <Select>
         <SelectTrigger className="w-[180px]">
-          <SelectValue placeholder="Theme" />
+          <SelectValue placeholder="Veggie Pizzas" />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="light">Light</SelectItem>
-          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="light">Speciality Paneer Pizzas(Veggie)</SelectItem>
+          <SelectItem value="dark">Traditional pizza</SelectItem>
           <SelectItem value="system">System</SelectItem>
         </SelectContent>
-      </Select>
+      </Select> */}
+      <div className="w-full mb-2  flex items-center justify-center py-2">
+        <Select onOpenChange={(val) => setOpen(val)}>
+          <SelectTrigger className="w-full md:w-1/3  bg-primary1 text-white font-bold rounded-t-md px-4 py-2 justify-between hover:bg-red-700">
+            <SelectValue
+              placeholder="Veggie Pizzas"
+              className="placeholder:text-white"
+            />
+            <ChevronDownIcon
+              className={cn(
+                "w-10 h-10 text-white transition-transform duration-200",
+                open && "rotate-180"
+              )}
+            />
+          </SelectTrigger>
+
+          <SelectContent className="w-full rounded-md border border-gray-200 shadow-md">
+            <div className="bg-white py-2 px-4 text-gray-700 space-y-2 text-[1rem] font-medium">
+              <SelectItem
+                value="paneer"
+                className="hover:bg-gray-100 cursor-pointer"
+              >
+                Speciality Paneer Pizzas (Veggie)
+              </SelectItem>
+              <SelectItem
+                value="traditional"
+                className="hover:bg-gray-100 cursor-pointer"
+              >
+                Traditional Pizzas
+              </SelectItem>
+              <SelectItem
+                value="breadsticks"
+                className="hover:bg-gray-100 cursor-pointer"
+              >
+                Breadsticks
+              </SelectItem>
+              <SelectItem
+                value="halal"
+                className="hover:bg-gray-100 cursor-pointer"
+              >
+                Halal Pizzas
+              </SelectItem>
+              <SelectItem
+                value="plant"
+                className="hover:bg-gray-100 cursor-pointer"
+              >
+                Plant Based Pizzas
+              </SelectItem>
+            </div>
+          </SelectContent>
+        </Select>
+      </div>
 
       <div className="flex flex-wrap justify-center sm:justify-between gap-y-8">
         {pizzaData.map((pizza) => (
