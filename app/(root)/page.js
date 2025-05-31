@@ -1,4 +1,6 @@
 import Hero from "@/components/home/Hero";
+import Offers from "@/components/home/Offers";
+import ReviewsSection from "@/components/home/ReviewsSection";
 
 import TopPicksSection from "@/components/home/TopPicksSection";
 import Image from "next/image";
@@ -8,6 +10,8 @@ export default function Home() {
     <div className="">
       <Hero />
       <TopPicksSection />
+      <Offers />
+      <ReviewsSection />
     </div>
   );
 }

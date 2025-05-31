@@ -55,6 +55,9 @@ body {
   .pizza-price{
     @apply  text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral
   }
+  .offer-text{
+    @apply  text-[1.56769rem] leading-[1.5rem] md:text-[1.75rem] md:leading-[2.5rem] lg:text-[3.25rem] lg:leading-[3.5rem] font-normal text-neutral
+  }
 
   .px{
     @apply md:pl-16 md:pr-16 pl-6 pr-6

@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const TopPicks = ({
+const Headline = ({
   leftText = "",
   rightText = "",
   specialText = "",
@@ -113,4 +113,4 @@ const PizzaArt = ({ right = "" }) => {
   );
 };
 
-export default TopPicks;
+export default  Headline;

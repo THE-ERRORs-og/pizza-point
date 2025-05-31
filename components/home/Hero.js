@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative  w-full h-[33.94rem] md:h-[55.4375rem] lg:h-[78.6875rem] ">
+    <div className=" w-full pt-4 pb-8">
       {/* content */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 px">
+      <div className="inset-0 flex flex-col justify-center items-center gap-4 px">
         <h3 className="font-amaranth text-[0.75rem] md:text-[1.03031rem] lg:text-[1.75rem] font-normal text-[#737373]">
           Rated 5 Stars in Google
         </h3>
