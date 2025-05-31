@@ -10,6 +10,28 @@ html {
   scroll-behavior: smooth;
 }
 
+/* globals.css or a CSS module */
+.testimonial-card {
+  @apply rounded-xl shadow-md p-6 mx-auto transition-all duration-300;
+}
+
+/* Active centered slide */
+.swiper-slide-active .testimonial-card {
+  @apply bg-secondary1;
+}
+
+/* Slides adjacent to the center */
+.swiper-slide-prev .testimonial-card,
+.swiper-slide-next .testimonial-card {
+  @apply bg-secondary4 opacity-70 scale-95;
+}
+
+/* Optional: dim further slides */
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) .testimonial-card {
+  @apply bg-gray-100 opacity-50 scale-90;
+}
+
+
 body {
   width: 100dvw;
   overflow-x: hidden;
@@ -55,6 +77,9 @@ body {
   }
   .pizza-price {
     @apply text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral;
+  }
+  .offer-text{
+    @apply  text-[1.56769rem] leading-[1.5rem] md:text-[1.75rem] md:leading-[2.5rem] lg:text-[3.25rem] lg:leading-[3.5rem] font-normal text-neutral
   }
 
   .px {

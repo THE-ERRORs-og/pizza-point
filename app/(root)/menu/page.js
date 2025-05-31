@@ -1,6 +1,9 @@
-import  {RoundPizzaCard, MenuRoundedCard } from "@/components/common/RoundPizzaCard";
-import Hero from "@/components/home/Hero";
-import TopPicks from "@/components/home/TopPicks";
+import {
+  RoundPizzaCard,
+  MenuRoundedCard,
+} from "@/components/common/RoundPizzaCard";
+
+import Headline from "@/components/home/Headline";
 import React from "react";
 import {
   Select,
@@ -132,7 +135,8 @@ export default function page() {
   ];
   return (
     <div className="flex flex-col px">
-      <TopPicks leftText="Our" specialText="Menu" rightText="" right={true} />
+      <Headline leftText="Our" specialText="Menu" rightText="" right={true} />
+
       <h3 className="sub-heading2 font-amaranth">Our Recommendation</h3>
       <Select>
         <SelectTrigger className="w-[180px]">
@@ -146,17 +150,17 @@ export default function page() {
       </Select>
 
       <div className="flex flex-wrap justify-center sm:justify-between gap-y-8">
-          {pizzaData.map((pizza) => (
-            <div key={pizza.id} className="mb-6 w-[50%] lg:w-[25%]">
+        {pizzaData.map((pizza) => (
+          <div key={pizza.id} className="mb-6 w-[50%] lg:w-[25%]">
             <MenuRoundedCard
               key={pizza.id}
               name={pizza.name}
               data={`Starting from $${pizza.startingPrice}`}
               img={pizza.image}
             />
-            </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
+    </div>
   );
 }

@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const TopPicks = ({
+const Headline = ({
   leftText = "",
   rightText = "",
   specialText = "",
@@ -47,8 +47,8 @@ const TopPicks = ({
           // Text on the left, PizzaArt on the right
           <>
             <h2 className="sub-heading w-fit whitespace-nowrap text-lg md:text-xl lg:text-2xl font-semibold">
-              Top Picks <span className="font-dafoe text-primary1">For</span>{" "}
-              You
+              {leftText} <span className="font-dafoe text-primary1">{specialText}</span>{" "}
+              {rightText}
             </h2>
             <div className="flex items-center gap-3 ml-4 overflow-hidden">
               <AnimatePresence initial={false}>
@@ -113,4 +113,4 @@ const PizzaArt = ({ right = "" }) => {
   );
 };
 
-export default TopPicks;
+export default  Headline;
