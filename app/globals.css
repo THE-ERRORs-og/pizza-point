@@ -104,6 +104,13 @@ body {
   .nav-hover {
     @apply text-lg bg-transparent hover:bg-yellow-400 transition duration-300 ease-in-out rounded-xl px-4 py-[0.3rem];
   }
+  .bg-cube-grid {
+    background-color: white;
+    background-image: url("data:image/svg+xml,%3Csvg width='180' height='210' viewBox='10 10 180 210' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,10 190,60 100,110 10,60' fill='none' stroke='lightgray' stroke-width='2'/%3E%3Cpolygon points='10,60 100,110 100,220 10,170' fill='none' stroke='lightgray' stroke-width='2'/%3E%3Cpolygon points='190,60 100,110 100,220 190,170' fill='none' stroke='lightgray' stroke-width='2'/%3E%3C/svg%3E");
+    background-size: 180px 210px;
+  }
+  
+
 }
 
 /* 

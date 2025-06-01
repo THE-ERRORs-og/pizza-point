@@ -1,6 +1,7 @@
 import React from "react";
 import MainButton from "../common/MainButton";
 import { ArrowRight } from "lucide-react";
+import GetDirectionButton from "./GetDirectionButton";
 
 const Hero = () => {
   return (
@@ -18,8 +19,9 @@ const Hero = () => {
           <Star />
         </div>
         <h1 className=" w-[18.875rem] md:w-[28.125rem] lg:w-1/2 main-heading">
-          Hot and <span className="text-secondary1 font-dafoe">Fresh</span>{" "}
-          Straight from the oven !
+          Hot and{" "}
+          <span className="text-secondary1 font-dafoe">Fresh</span> Straight from
+          the oven !
           <img
             src="/img/pizza-slice.png"
             alt="pizza slice"
@@ -32,10 +34,7 @@ const Hero = () => {
             text="Order Online"
             className="h-[1.68619rem] mr-2 w-[5.62863rem] md:h-[2.58756rem] md:w-[8.63744rem] lg:h-[3.5rem] lg:w-[14.8125rem] "
           />
-          <button className="group pt-3.5 pb-3.5 md:ml-12 text-[0.75rem] leading-[0.70681rem] md:text-[1.25rem] md:leading-[1.5rem] lg:text-[1.5rem] lg:leading-[1.5rem] font-medium rounded-xl mt-4 md:mt-8 inline-block transition-all duration-300 text-black">
-            Get Direction{" "}
-            <ArrowRight className="inline transition-transform duration-300 group-hover:translate-x-2 " />
-          </button>
+          <GetDirectionButton />
         </div>
         <img
           src="/banner/hero-banner.jpg"

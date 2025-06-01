@@ -5,7 +5,7 @@ import OfferCard from "../common/OfferCard";
 
 const LocationSection = () => {
   return (
-    <div>
+    <div id="location-section">
       <Headline leftText="Our" specialText="Location" />
       <div className=" my h-[13.5rem] md:h-[22.125rem] lg:h-[40.0625rem] space-x-4 flex items-center justify-between pt-4 pb-4">
         <div className="hidden md:flex w-full h-full">
