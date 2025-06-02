@@ -18,6 +18,8 @@ export const metadata = {
 
 const amaranth = Amaranth({
   weight: "400",
+  subsets: ["latin"], // or ['latin-ext'] if needed
+  preload: true, // Optional, but recommended if you want preloading
 });
 
 export default function RootLayout({ children }) {
