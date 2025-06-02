@@ -5,7 +5,7 @@ import React from "react";
 const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
   return (
     <div className=" ">
-      <div className="relative  pt-16 pl-4 flex flex-col items-center">
+      <div className="relative  pt-16 sm:pl-4 flex flex-col items-center">
         {/* Pizza Image */}
         <div
           className="shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] flex flex-col  items-center overflow-hidden"
@@ -16,7 +16,7 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
           <img
             src={img}
             alt={name}
-            className=" translate-y-8 md:translate-y-12 translate-x-1  md:translate-x-1.5 z-1 w-[85%] aspect-square rounded-full object-cover shadow-lg"
+            className=" translate-y-3 md:translate-y-12 translate-x-1  md:translate-x-1.5 z-1 w-[85%] aspect-square rounded-full object-cover shadow-lg"
           />
         </div>
 
@@ -67,7 +67,7 @@ const bebas = Bebas_Neue({
 });
 const MenuRoundedCard = ({ name, img, data }) => {
   return (
-    <div className="bg-white shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[300px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden">
+    <div className="bg-white shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[400px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden p-2">
       {/* Pizza Image */}
       <img
         src={img}
@@ -83,7 +83,9 @@ const MenuRoundedCard = ({ name, img, data }) => {
       </h3>
 
       {/* Ingredients / Description */}
-      <p className="text-gray-700 text-sm leading-relaxed">{data}</p>
+      <p className="text-gray-700 text-sm leading-relaxed overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
+        {data.length > 100 ? `${data.substring(0, 100)}...` : data}
+      </p>
     </div>
   );
 };

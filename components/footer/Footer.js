@@ -1,6 +1,7 @@
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import MainButton from "../common/MainButton";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -50,9 +51,9 @@ const Footer = () => {
         {/* Location */}
         <div>
           <h2 className="text-xl font-bold">LOCATION</h2>
-          <p className="mt-2 text-lg font-medium">West Seattle</p>
-          <p className="text-md">9061 Delridge Way SW, Seattle,</p>
-          <p className="text-md">Washington, 98106</p>
+          <p className="mt-2 text-lg font-medium">Burien</p>
+          <p className="text-md">15321 1st Ave S, Burien,</p>
+          <p className="text-md">Washington, 98148</p>
         </div>
 
         {/* Logo and Socials */}
@@ -85,7 +86,13 @@ const Footer = () => {
           <h2 className="text-xl font-bold">HOURS</h2>
           <p className="mt-2 text-lg font-medium">open 7 days a week</p>
           <p className="text-md mb-4">24 hours!</p>
-          <MainButton text="Order Online" />
+          <Link
+            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MainButton text="Order Online" />
+          </Link>
         </div>
       </div>
     </footer>

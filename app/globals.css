@@ -75,7 +75,7 @@ body {
     @apply text-[1.25rem] md:text-[2.5rem] lg:text-[3rem] leading-normal font-normal text-secondary2;
   }
   .pizza-name {
-    @apply text-[0.5rem]  md:text-[1.2rem]  lg:text-[1.5rem] leading-normal font-normal text-primary1;
+    @apply text-[0.6rem]  md:text-[1.2rem]  lg:text-[1.5rem] leading-normal font-normal text-primary1;
   }
   .pizza-price {
     @apply text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral;
