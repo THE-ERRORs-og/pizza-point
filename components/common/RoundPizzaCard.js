@@ -62,6 +62,8 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
 
 const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ['latin'], // or ['latin-ext'] if needed
+  preload: true, // Optional, but recommended if you want preloading
 });
 const MenuRoundedCard = ({ name, img, data }) => {
   return (
