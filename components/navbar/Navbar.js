@@ -7,8 +7,8 @@ import React, { useEffect, useRef, useState } from "react";
 import MainButton from "../common/MainButton";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false); 
-  const menuDrawerRef = useRef(null); 
+  const [isOpen, setIsOpen] = useState(false);
+  const menuDrawerRef = useRef(null);
 
   const menuItems = [
     { name: "Home", path: "/" },
@@ -37,7 +37,13 @@ const Navbar = () => {
           <Link href="/menu" key="Menu" className={`nav-hover`}>
             Menu
           </Link>
-          <MainButton text="Order Online" className="!text-[1.25rem]" />
+          <Link
+            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MainButton text="Order Online" className="!text-[1.25rem]" />
+          </Link>
         </div>
 
         {/* tab and mobile */}
