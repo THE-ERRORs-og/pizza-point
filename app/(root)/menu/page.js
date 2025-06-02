@@ -76,7 +76,6 @@ export default function Page() {
             <div key={pizza.id} className="mb-6 w-[50%] lg:w-[25%]">
               <MenuRoundedCard
                 name={pizza.name}
-                // data={`Starting from $${pizza.startingPrice}`}
                 data={pizza.desc}
                 img={pizza.image}
               />
@@ -125,7 +124,6 @@ export default function Page() {
             <MenuRoundedCard
               key={pizza.id}
               name={pizza.name}
-              // data={`Starting from $${pizza.startingPrice}`}
               data={pizza.desc}
               img={pizza.image}
             />

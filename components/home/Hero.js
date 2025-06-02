@@ -2,6 +2,7 @@ import React from "react";
 import MainButton from "../common/MainButton";
 import { ArrowRight } from "lucide-react";
 import GetDirectionButton from "./GetDirectionButton";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -30,10 +31,16 @@ const Hero = () => {
         </h1>
         {/* buttons */}
         <div className="">
+        <Link
+            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <MainButton
             text="Order Online"
             className="h-[1.68619rem] mr-2 w-[5.62863rem] md:h-[2.58756rem] md:w-[8.63744rem] lg:h-[3.5rem] lg:w-[14.8125rem] "
           />
+        </Link>
           <GetDirectionButton />
         </div>
         <img
