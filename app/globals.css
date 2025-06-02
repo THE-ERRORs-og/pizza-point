@@ -27,10 +27,12 @@ html {
 }
 
 /* Optional: dim further slides */
-.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) .testimonial-card {
+.swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(
+    .swiper-slide-next
+  )
+  .testimonial-card {
   @apply bg-gray-100 opacity-50 scale-90;
 }
-
 
 body {
   width: 100dvw;
@@ -73,13 +75,13 @@ body {
     @apply text-[1.25rem] md:text-[2.5rem] lg:text-[3rem] leading-normal font-normal text-secondary2;
   }
   .pizza-name {
-    @apply text-[0.63863rem]  md:text-[0.9415rem]  lg:text-[1.875rem] leading-normal font-normal text-primary1;
+    @apply text-[0.5rem]  md:text-[1.2rem]  lg:text-[1.5rem] leading-normal font-normal text-primary1;
   }
   .pizza-price {
     @apply text-[0.42575rem] md:text-[0.62769rem] lg:text-[1.125rem] leading-normal font-normal text-neutral;
   }
-  .offer-text{
-    @apply  text-[1.56769rem] leading-[1.5rem] md:text-[1.75rem] md:leading-[2.5rem] lg:text-[3.25rem] lg:leading-[3.5rem] font-normal text-neutral
+  .offer-text {
+    @apply text-[1.56769rem] leading-[1.5rem] md:text-[1.75rem] md:leading-[2.5rem] lg:text-[3.25rem] lg:leading-[3.5rem] font-normal text-neutral;
   }
 
   .px {
@@ -109,8 +111,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg width='180' height='210' viewBox='10 10 180 210' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,10 190,60 100,110 10,60' fill='none' stroke='lightgray' stroke-width='2'/%3E%3Cpolygon points='10,60 100,110 100,220 10,170' fill='none' stroke='lightgray' stroke-width='2'/%3E%3Cpolygon points='190,60 100,110 100,220 190,170' fill='none' stroke='lightgray' stroke-width='2'/%3E%3C/svg%3E");
     background-size: 180px 210px;
   }
-  
-
 }
 
 /* 

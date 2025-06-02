@@ -18,7 +18,7 @@ import { ChevronDown, ChevronDownIcon, ChevronUpIcon } from "lucide-react";
 import { cn } from "@/lib/utils"; // optional: classnames helper
 import { pizzaData } from "@/lib/data";
 
-export default function page() {
+export default function Page() {
   const [open, setOpen] = useState(false);
 
   // Extract unique pizza types

@@ -1,4 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
+import Link from "next/link";
 import React from "react";
 
 const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
@@ -22,11 +23,17 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
         {/* Bottom Label */}
         <div className="absolute bottom-[-20] md:bottom-[-40] z-1 -mt-4 bg-yellow-400 px-4 py-2 w-[85%] rounded-xl flex justify-between items-center shadow-md">
           <div>
-            <h5 className="text-[1rem] pizza-name font-bold text-[#A02E29]">
+            <p className="pizza-name font-bold text-[#A02E29]">
               {name}
-            </h5>
+            </p>
             <p className="text-white pizza-price text-sm">{price}</p>
           </div>
+
+          <Link
+            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <div className="bg-primary1 p-0 md:p-2  rounded-full">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -46,6 +53,7 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
             </svg>
             {/* <ArrowUpRight className="text-white w-8 h-8" /> */}
           </div>
+            </Link>
         </div>
       </div>
     </div>
