@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <header className="flex z-10 w-screen justify-between items-center px text-black font-normal text-xl">
+      <header className="flex z-10 w-screen justify-between items-center px text-black font-normal text-xl mt-2">
         <div className="hidden lg:flex justify-start space-x-6 w-full">
           <Link href="/" key="Home" className={`nav-hover`}>
             Home
@@ -32,7 +32,10 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <img src="/logo/logo.png" alt="logo" className="logo-img" />
+        <Link href="/" key="Home">
+          <img src="/logo/logo.png" alt="logo" className="logo-img" />
+        </Link>
+
         <div className="hidden lg:flex justify-end space-x-6 w-full">
           <Link href="/menu" key="Menu" className={`nav-hover`}>
             Menu
