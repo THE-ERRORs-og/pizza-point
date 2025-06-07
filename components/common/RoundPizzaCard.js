@@ -23,9 +23,7 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
         {/* Bottom Label */}
         <div className="absolute bottom-[-20] md:bottom-[-40] z-1 -mt-4 bg-yellow-400 px-4 py-2 w-[85%] rounded-xl flex justify-between items-center shadow-md">
           <div>
-            <p className="pizza-name font-bold text-[#A02E29]">
-              {name}
-            </p>
+            <p className="pizza-name font-bold text-[#A02E29]">{name}</p>
             <p className="text-white pizza-price text-sm">{price}</p>
           </div>
 
@@ -34,26 +32,26 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <div className="bg-primary1 p-0 md:p-2  rounded-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="19"
-              viewBox="0 0 20 19"
-              fill="none"
-              className="text-white w-8 h-8 lg:w-12 lg:h-12"
-            >
-              <path
-                d="M8.68552 5.64395L14.1382 6.87262M14.1382 6.87262L12.4759 12.2091M14.1382 6.87262L5.60027 11.802"
-                stroke="white"
-                strokeWidth="0.896247"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            {/* <ArrowUpRight className="text-white w-8 h-8" /> */}
-          </div>
-            </Link>
+            <div className="bg-primary1 p-0 md:p-2  rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="19"
+                viewBox="0 0 20 19"
+                fill="none"
+                className="text-white w-8 h-8 lg:w-12 lg:h-12"
+              >
+                <path
+                  d="M8.68552 5.64395L14.1382 6.87262M14.1382 6.87262L12.4759 12.2091M14.1382 6.87262L5.60027 11.802"
+                  stroke="white"
+                  strokeWidth="0.896247"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              {/* <ArrowUpRight className="text-white w-8 h-8" /> */}
+            </div>
+          </Link>
         </div>
       </div>
     </div>
@@ -62,12 +60,12 @@ const RoundPizzaCard = ({ name, img, price = "Starting from $10" }) => {
 
 const bebas = Bebas_Neue({
   weight: "400",
-  subsets: ['latin'], // or ['latin-ext'] if needed
+  subsets: ["latin"], // or ['latin-ext'] if needed
   preload: true, // Optional, but recommended if you want preloading
 });
 const MenuRoundedCard = ({ name, img, data }) => {
   return (
-    <div className="bg-white shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[400px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden p-2">
+    <div className="bg-white shadow-[0_0_12.539px_0_rgba(0,0,0,0.10)] rounded-b-[2rem] rounded-t-[10rem] pt-10 pb-6 w-[80%] h-[350px] md:h-[380px] max-w-xs mx-auto flex flex-col items-center text-center relative overflow-hidden p-2">
       {/* Pizza Image */}
       <img
         src={img}
@@ -83,7 +81,14 @@ const MenuRoundedCard = ({ name, img, data }) => {
       </h3>
 
       {/* Ingredients / Description */}
-      <p className="text-gray-700 text-sm leading-relaxed overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
+      <p
+        className="text-gray-700 text-sm leading-relaxed overflow-hidden"
+        style={{
+          display: "-webkit-box",
+          WebkitLineClamp: 3,
+          WebkitBoxOrient: "vertical",
+        }}
+      >
         {data.length > 100 ? `${data.substring(0, 100)}...` : data}
       </p>
     </div>

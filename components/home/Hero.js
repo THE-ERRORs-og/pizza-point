@@ -9,7 +9,7 @@ const Hero = () => {
     <div className=" w-full pt-4 pb-8">
       {/* content */}
       <div className="inset-0 flex flex-col justify-center items-center gap-4">
-        <h3 className="font-amaranth text-[0.75rem] md:text-[1.03031rem] lg:text-[1.75rem] font-normal text-[#737373]">
+        <h3 className="font-amaranth text-[1.5rem] md:text-[1.03031rem] lg:text-[1.75rem] font-normal text-[#737373]">
           Rated 5 Stars in Google
         </h3>
         <div className="flex gap-[0.39263rem]">
@@ -20,9 +20,8 @@ const Hero = () => {
           <Star />
         </div>
         <h1 className=" w-[18.875rem] md:w-[28.125rem] lg:w-1/2 main-heading">
-          Hot and{" "}
-          <span className="text-secondary1 font-dafoe">Fresh</span> Straight from
-          the oven !
+          Hot and <span className="text-secondary1 font-dafoe">Fresh</span>{" "}
+          Straight from the oven !
           <img
             src="/img/pizza-slice.png"
             alt="pizza slice"
@@ -31,20 +30,20 @@ const Hero = () => {
         </h1>
         {/* buttons */}
         <div className="">
-        <Link
+          <Link
             href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
             target="_blank"
             rel="noopener noreferrer"
           >
-          <MainButton
-            text="Order Online"
-            className="h-[1.68619rem] mr-2 w-[5.62863rem] md:h-[2.58756rem] md:w-[8.63744rem] lg:h-[3.5rem] lg:w-[14.8125rem] "
-          />
-        </Link>
+            <MainButton
+              text="Order Online"
+              className="text-[1rem] h-[2.2rem] mr-2 w-[6.5rem] md:h-[2.58756rem] md:w-[8.63744rem] lg:h-[3.5rem] lg:w-[14.8125rem] "
+            />
+          </Link>
           <GetDirectionButton />
         </div>
         <img
-          src="/banner/hero-banner.jpg"
+          src="https://pub-af531d0497a24cdbb5d20c58edde5c58.r2.dev/pizza_point/DSC05394.jpg"
           alt="hero-banner"
           className="object-cover  w-full lg:h-[44.93838rem] md:h-[25.20444rem]  h-[11.96456rem] rounded-[0.37194rem] md:rounded-[0.81463rem] lg:rounded-[1.39706rem]"
         />
