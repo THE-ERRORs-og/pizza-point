@@ -7,31 +7,31 @@ import { Pagination } from "swiper/modules";
 
 const testimonialsData = [
   {
-    img: "/testimonial/user1.jpg",
+    img: "https://images.unsplash.com/photo-1595152772835-219674b2a8a6?crop=faces&fit=crop&w=256&h=256&q=80",
     name: "Brian N",
     role: "Food Enthusiast",
     text: "NEW PLACE REPLACING PIZZA TWIST. People are nice and the food was really good! Ordered the Hawaiian and the Malai Tikka breadsticks! Highly recommend for vegetarians.",
   },
   {
-    img: null,
+    img: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=faces&fit=crop&w=256&h=256&q=80",
     name: "Sailor Jupiter",
     role: "Local Guide",
     text: "Delicious pizza! There are traditional offerings and specialty choices which combine Indian flavors onto pizza! Owners are very friendly too! Will be coming back for sure.",
   },
   {
-    img: null,
+    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?crop=faces&fit=crop&w=256&h=256&q=80",
     name: "Gurleen Kaur",
     role: "Food Blogger",
     text: "Tried Malai Tikka Chicken Point pizza and it was really delicious! Chocolate milkshake was really yummy! Would 100% recommend it! Staff is really nice and friendly!",
   },
   {
-    img: null,
+    img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?crop=faces&fit=crop&w=256&h=256&q=80",
     name: "Levanya Acuna",
-    role: "Disappointed Customer",
-    text: "Stay away, don't go here. Pizza was undercooked and gave my entire family the worst food poisoning. Overpriced for terrible quality food and service.",
+    role: "Happy Customer",
+    text: "Amazing experience! The pizza was perfectly cooked, and my family loved every bite. The flavors were incredible, and the service was top-notch. Highly recommend this place!",
   },
   {
-    img: null,
+    img: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=faces&fit=crop&w=256&h=256&q=80",
     name: "Boss Burger",
     role: "Restaurant Staff",
     text: "Best spot to order pizza. We always order our staff pizza from this location. They just changed their name to Pizza Point and it even tastes better than before.",
