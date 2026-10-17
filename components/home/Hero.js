@@ -31,7 +31,7 @@ const Hero = () => {
         {/* buttons */}
         <div className="">
           <Link
-            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            href="https://order.toasttab.com/online/pizzapoint"
             target="_blank"
             rel="noopener noreferrer"
           >
