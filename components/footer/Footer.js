@@ -87,7 +87,7 @@ const Footer = () => {
           <p className="mt-2 text-lg font-medium">open 7 days a week</p>
           <p className="text-md mb-4">24 hours!</p>
           <Link
-            href="https://order.online/store/pizza-point-burien-33810221/?hideModal=true"
+            href="https://order.toasttab.com/online/pizzapoint"
             target="_blank"
             rel="noopener noreferrer"
           >
